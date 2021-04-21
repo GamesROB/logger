@@ -31,7 +31,7 @@ async function paste (messages, guildID) {
       globalUser = {
         username: 'Unknown',
         discriminator: '0000',
-        avatarURL: 'https://www.clker.com/cliparts/C/8/4/G/W/o/transparent-red-circle-hi.png'
+        avatarURL: 'http://www.clker.com/cliparts/C/8/4/G/W/o/transparent-red-circle-hi.png'
       }
     }
     return `${globalUser.username}#${globalUser.discriminator} (${m.author_id}) | (${globalUser.avatarURL}) | ${new Date(m.ts)}: ${m.content} |  | `
