@@ -33,19 +33,15 @@ module.exports = {
     })
     embed.fields.push({
       name: 'Open Source',
-      value: 'I am OSS at https://github.com/curtisf/loggerv3'
+      value: 'I\'m OSS at https://github.com/gamesrob/supportbot, based on https://github.com/curtisf/logger'
     },
     {
       name: 'Support',
-      value: 'If something is going horribly wrong, go ahead and join [my support server](https://discord.gg/ed7Gaa3)'
-    },
-    {
-      name: 'Dashboard',
-      value: 'You can customize the bot to your liking at [the dashboard](https://logger.bot) (https://logger.bot).'
+      value: 'You can get support for GamesROB in <#484835115852234756>.'
     },
     {
       name: 'Privacy Policy',
-      value: 'You can view the privacy policy [here](https://gist.github.com/curtisf/0598b0930c11363d24e29300cf21d572). Similarly, if you want updates on when it changes, join my support server and follow the #privacy-policy channel.'
+      value: 'You can view GamesROB\'s Privacy Policy [here](https://github.com/GamesROB/documentation/blob/master/Wiki/Documentation/PrivacyPolicy.md) and additionally the privacy policy of the logging bot our Support Server bot is based on [here](https://gist.github.com/curtisf/0598b0930c11363d24e29300cf21d572)'
     },
     {
       name: 'Patreon',
