@@ -25,6 +25,7 @@
     "eris": "github:abalabahaha/eris#dev",
     "ioredis": "^4.27.1",
     "markdown-escape": "^1.1.0",
+    "moment-timezone": "^0.5.33",
     "os": "^0.1.1",
     "os-utils": "0.0.14",
     "path": "^0.12.7",
