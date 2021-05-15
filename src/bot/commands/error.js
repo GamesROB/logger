@@ -6,6 +6,6 @@ module.exports = {
   description: 'Returns a quick link to an error for the developers',
   quickHelp: 'Returns a quick link to an error for the developers',
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}error 123456789123456789\` <- Returns a link to the error with ID 123456789123456789`,
-  type: 'creator',
+  type: 'staff',
   hidden: true
 }

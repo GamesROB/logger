@@ -8,6 +8,6 @@ module.exports = {
   description: 'Basically says \"be more specific\" with more words because people don\'t always listen.',
   quickHelp: 'Basically says \"be more specific\" with more words because people don\'t always listen.',
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}dw\` <- Responds with a message telling people to be more specific`,
-  type: 'creator',
+  type: 'staff',
   hidden: true
 }
