@@ -21,9 +21,9 @@
     "bluebird": "^3.7.2",
     "chalk": "^4.1.1",
     "cluster": "^0.7.7",
-    "dotenv": "^8.2.0",
+    "dotenv": "^9.0.2",
     "eris": "github:abalabahaha/eris#dev",
-    "ioredis": "^4.27.1",
+    "ioredis": "^4.27.2",
     "markdown-escape": "^1.1.0",
     "moment-timezone": "^0.5.33",
     "os": "^0.1.1",
@@ -42,6 +42,6 @@
     "zabbix-promise": "^2.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.25.0"
+    "eslint": "^7.26.0"
   }
 }
