@@ -6,7 +6,7 @@ module.exports = {
   name: 'known',
   description: 'Thanks the person for suggesting/reporting something while telling them someone else previously did so.',
   quickHelp: 'Thanks the person for suggesting/reporting something while telling them someone else previously did so.',
-  examples: `\`${process.env.GLOBAL_BOT_PREFIX}known\` <- Responds with a message telling people to be more specific`,
+  examples: `\`${process.env.GLOBAL_BOT_PREFIX}known\` <- Responds with a messaging thanking someone for trying to help`,
   type: 'staff',
   hidden: true
 }
