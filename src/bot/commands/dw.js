@@ -1,8 +1,7 @@
 module.exports = {
   func: async (message, suffix) => {
-    message.channel.createMessage("Please be more informative. We can't do anything with \"doesn\'t work\"\/\"can\'t do\"\/\"is broken\"." +
-    "\nWhat isn\'t working? Which part did you get to? Can you provide screenshots?" +
-    "\nSorry for the inconvenience in advance.")
+    message.channel.createMessage("Please be more informative. We can't do anything with \"doesn\'t work\"\/\"won\'t work\"\/\"is broken\"." +
+    "\nWhat isn\'t working? When does it stop working? Can you send some screenshots (these can be a massive help)?")
   },
   name: 'dw',
   description: 'Basically says \"be more specific\" with more words because people don\'t always listen.',
