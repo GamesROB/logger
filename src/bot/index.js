@@ -64,7 +64,7 @@ async function init () {
   })
 
   global.bot.editStatus('dnd', {
-    name: 'Bot is booting'
+    name: 'Starting up'
   })
 
   global.bot.commands = {}
