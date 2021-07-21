@@ -25,7 +25,7 @@ function processCommand (message, commandName, suffix) {
   } else if (command.type === 'creator' && !process.env.CREATOR_IDS.includes(message.author.id)) {
     message.channel.createMessage('This command is creator only!')
     return
-  } else if (command.type === 'staff' && message.member.roles.includes('484511827170951169')) {
+  } else if (command.type === 'staff' && !message.member.roles.includes('484511827170951169')) {
     message.channel.createMessage('This command is for GamesROB Staff only!')
     return
   } else if (command.type === 'admin' && !(message.member.permissions.has('administrator' || message.author.id === message.channel.guild.ownerID))) {
