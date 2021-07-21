@@ -6,7 +6,7 @@ module.exports = {
     const num = parseInt(suffix)
     if (num < 1 || num > 25000) return message.channel.createMessage('That number is invalid! Please provide any number between 1 and 25,000')
     message.channel.getMessages(num).then(messages => {
-      const pasteString = messages.reverse().map(m => `${m.author.username}#${m.author.discriminator} (${m.author.id}) | (${m.author.avatarURL}) | ${new Date(m.timestamp)}: ${m.content ? m.content : ''} | ${m.embeds.length === 0 ? '' : `{"embeds": [${m.embeds.map(e => JSON.stringify(e))}]}`} | ${m.attachments.length === 0 ? '' : ` =====> Attachment: ${m.attachments[0].filename}:${m.attachments[0].url}`}`).join('\r\n')
+      const pasteString = messages.reverse().map(m => `${m.author.username}#${m.author.discriminator} (${m.author.id}) | ${new Date(m.timestamp).toUTCString()}: ${m.content ? m.content : ''} ${m.embeds.length === 0 ? '' : `| {"embeds": [${m.embeds.map(e => JSON.stringify(e))}]}`} | ${m.attachments.length === 0 ? '' : ` =====> Attachment: ${m.attachments[0].filename}:${m.attachments[0].url}`}`).join('\r\n')
       sa
         .post(process.env.PASTE_CREATE_ENDPOINT)
         .set('Authorization', process.env.PASTE_CREATE_TOKEN)
@@ -14,7 +14,7 @@ module.exports = {
         .send(pasteString || 'No messages were able to be archived')
         .end((err, res) => {
           if (!err && res.statusCode === 200 && res.body.key) {
-            message.channel.createMessage(`<@${message.author.id}>, **${messages.length}** message(s) could be archived. Link: https://haste.lemonmc.com/${res.body.key}.txt`)
+            message.channel.createMessage(`<@${message.author.id}>, **${messages.length}** message(s) could be archived. Link: https://haste.logger.bot/${res.body.key}.txt`)
           } else {
             global.logger.error(err, res.body)
             global.webhook.error('An error has occurred while posting to the paste website. Tell the Developers to check logs!')

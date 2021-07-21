@@ -3,7 +3,8 @@ const CHANNEL_TYPE_MAP = {
   0: 'Text channel',
   2: 'Voice channel',
   4: 'Category',
-  5: 'Announcement'
+  5: 'Announcement',
+  13: 'Stage Channel'
 }
 
 module.exports = {
@@ -25,7 +26,7 @@ module.exports = {
           value: channel.name
         }, {
           name: 'Creation date',
-          value: global.bot.guildSettingsCache[channel.guild.id].makeFormattedTime(channel.createdAt)
+          value: `<t:${Math.round(((channel.id / 4194304) + 1420070400000) / 1000)}:F>`
         },
         {
           name: 'Position',
@@ -48,9 +49,9 @@ module.exports = {
     }
     if (channel.permissionOverwrites.size !== 0) {
       channel.permissionOverwrites.forEach(overwrite => {
-        if (overwrite.type === 'role') { // Should only be role anyways, but let's just be safe
+        if (overwrite.type === 0) { // Should only be role anyways, but let's just be safe
           const role = channel.guild.roles.find(r => r.id === overwrite.id)
-          if (role.name === '@everyone') return
+          if (!role || role.name === '@everyone') return
           channelDeleteEvent.embed.fields.push({
             name: role.name,
             value: `Type: role\nPermissions: ${Object.keys(overwrite.json).filter(perm => overwrite.json[perm]).join(', ')}`
