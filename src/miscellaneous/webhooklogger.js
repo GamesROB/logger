@@ -70,7 +70,7 @@ function generic (message) {
       .post(process.env.DISCORD_WEBHOOK_URL)
       .send({
         avatar_url: 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png',
-        username: `Generic ${global.bot.user.username} Webhook Notification`,
+        username: `Generic ${global.bot.username} Webhook Notification`,
         embeds: [{
           title: 'Generic',
           description: message,
