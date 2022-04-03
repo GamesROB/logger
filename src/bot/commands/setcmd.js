@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         name: 'setup',
-        description: 'Start setting Logger up',
+        description: `Start setting ${global.bot.user.username} up`,
         options: [
           {
             type: ERIS_CONSTANTS.ApplicationCommandOptionTypes.SUB_COMMAND,

@@ -78,7 +78,7 @@ async function handlePresetSetup (interaction, recursionUUID) {
       }]
     }]
     const setupEmbed = {
-      title: 'Welcome to the Logger setup utility',
+      title: `Welcome to the ${global.bot.user.username} setup utility`,
       description: 'Use the option selector below choose preset events for logging to **here**. If you want to learn more about the usage of this command, see `/help guide: Usage` and `/help`.',
       color: EMBED_COLORS.PURPLED_BLUE,
       thumbnail: {
@@ -367,7 +367,7 @@ async function handleIndividualSetup (interaction, recursionUUID) {
       }]
     }]
     const setupEmbed = {
-      title: 'Welcome to the Logger setup utility',
+      title: `Welcome to the ${global.bot.user.username} setup utility`,
       description: 'Use the option selector below choose individual events for logging to **here**. If you want to learn more about the usage of this command, see `/help guide: Usage` and `/help`.',
       color: EMBED_COLORS.PURPLED_BLUE,
       thumbnail: {

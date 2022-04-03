@@ -13,7 +13,7 @@ function fatal (message) {
       .post(process.env.DISCORD_WEBHOOK_URL)
       .send({
         avatar_url: 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png',
-        username: `Fatal Error LoggerBot Webhook Notification`,
+        username: `Fatal Error ${global.bot.user.username} Webhook Notification`,
         embeds: [{
           title: 'Fatal',
           description: message,
@@ -32,7 +32,7 @@ function error (message) {
       .post(process.env.DISCORD_WEBHOOK_URL)
       .send({
         avatar_url: 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png',
-        username: `Error LoggerBot Webhook Notification`,
+        username: `Error ${global.bot.user.username} Webhook Notification`,
         embeds: [{
           title: 'Error',
           description: message,
@@ -51,7 +51,7 @@ function warn (message) {
       .post(process.env.DISCORD_WEBHOOK_URL)
       .send({
         avatar_url: 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png',
-        username: `Warning LoggerBot Webhook Notification`,
+        username: `Warning ${global.bot.user.username} Webhook Notification`,
         embeds: [{
           title: 'Warning',
           description: message,
@@ -70,7 +70,7 @@ function generic (message) {
       .post(process.env.DISCORD_WEBHOOK_URL)
       .send({
         avatar_url: 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png',
-        username: `Generic LoggerBot Webhook Notification`,
+        username: `Generic ${global.bot.user.username} Webhook Notification`,
         embeds: [{
           title: 'Generic',
           description: message,

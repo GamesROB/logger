@@ -26,10 +26,13 @@ function processCommand (message, commandName, suffix) {
     command.func(message, suffix)
     return
   } else if (command.type === 'creator' && !process.env.CREATOR_IDS.includes(message.author.id)) {
-    message.channel.createMessage('This command is creator only!')
+    message.channel.createMessage(`This command is for the ${global.bot.user.username} bot creators only!`)
+    return
+  } else if (command.type === 'staff' && !message.member.roles.includes('484511827170951169')) {
+    message.channel.createMessage(`This command is for ${global.bot.user.username} Staff only!`)
     return
   } else if (command.type === 'admin' && !(message.member.permissions.has('administrator' || message.author.id === message.channel.guild.ownerID))) {
-    message.channel.createMessage('That\'s an admin only command. You need the administrator permission to use it.')
+    message.channel.createMessage('That\'s a server-admin only command. You need the administrator permission to use it.')
     return
   } else if (command.perm && !(message.member.permissions.has(command.perm) || message.author.id === message.channel.guild.ownerID)) {
     message.channel.createMessage(`This command requires you to be the owner of the server, or have the ${command.perm} permission.`)

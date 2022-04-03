@@ -25,7 +25,7 @@ module.exports = {
           },
           {
             name: 'The Author',
-            value: 'Logger is developed and maintained by [James Bond#0007](https://github.com/curtisf). You can contact him via my [home server](https://discord.gg/ed7Gaa3).'
+            value: `${global.bot.user.username} is developed and maintained by [James Bond#0007](https://github.com/curtisf). You can contact him via my [home server](https://discord.gg/ed7Gaa3).`
           },
           {
             name: 'Bot Info',
@@ -44,7 +44,7 @@ module.exports = {
     })
   },
   name: 'info',
-  quickHelp: 'Get information about how Logger was made and the current shard serving you.',
+  quickHelp: `Get information about how ${global.bot.user.username} was made and the current shard serving you.`,
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}info\``,
   type: 'any',
   category: 'Information'

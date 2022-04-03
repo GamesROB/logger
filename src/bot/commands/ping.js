@@ -5,7 +5,7 @@ module.exports = {
     m.edit(`Done. RTT: ${new Date().getTime() - start}`)
   },
   name: 'ping',
-  quickHelp: 'Get Logger\'s round-trip time to Discord.',
+  quickHelp: `Get ${global.bot.user.username}\'s round-trip time to Discord.`,
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}ping\``,
   type: 'any',
   category: 'General'
