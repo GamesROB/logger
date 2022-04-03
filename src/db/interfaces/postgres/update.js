@@ -1,11 +1,11 @@
-const pool = require('../../clients/postgres')
-const escape = require('markdown-escape')
-const getDoc = require('./read').getGuild
-const getMessageById = require('./read').getMessageById
-const cacheGuild = require('../../../bot/utils/cacheGuild')
-const getMessageFromBatch = require('../../messageBatcher').getMessage
-const updateBatchMessage = require('../../messageBatcher').updateMessage
-const aes = require('../../aes')
+const pool = require('../../clients/postgres');
+const escape = require('markdown-escape');
+const getDoc = require('./read').getGuild;
+const getMessageById = require('./read').getMessageById;
+const cacheGuild = require('../../../bot/utils/cacheGuild');
+const getMessageFromBatch = require('../../messageBatcher').getMessage;
+const updateBatchMessage = require('../../messageBatcher').updateMessage;
+const aes = require('../../aes');
 
 const eventList = [
   'channelCreate',

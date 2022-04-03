@@ -40,7 +40,7 @@ module.exports = {
     })
   },
   name: 'togglemodule',
-  quickHelp: `[DEPRECATED]\nIgnore any event provided after this command. You should have no need for this command when you can stop an event from logging by using ${process.env.GLOBAL_BOT_PREFIX}stoplogging or by signing into [the dashboard](https://logger.bot).`,
+  quickHelp: `[DEPRECATED]\nIgnore any event provided after this command. You should have no need for this command when you can stop an event from logging by using ${process.env.GLOBAL_BOT_PREFIX}stoplogging.`,
   examples: 'Unneccesary, this command is deprecated.',
   type: 'custom',
   perm: 'manageChannels',

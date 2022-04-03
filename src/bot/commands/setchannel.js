@@ -54,7 +54,7 @@ module.exports = {
     }
   },
   name: 'setchannel',
-  quickHelp: 'The [dashboard](https://logger.bot) is the easiest way to setup! Setchannel configures bot logging behavior.',
+  quickHelp: 'Setchannel configures bot logging behavior.',
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}setchannel\` <- log everything where this is sent
   \`${process.env.GLOBAL_BOT_PREFIX}setchannel messageDelete, messageUpdate\` <- logs message deletions and updates
   \`${process.env.GLOBAL_BOT_PREFIX}setchannel guildMemberAdd, guildMemberRemove, guildMemberKick\` <- joins, leaves, kicks logging **(YOU MUST ALLOW LOGGER __MANAGE CHANNELS AND MANAGE SERVER__ FOR JOIN LOGGING TO WORK! Why? Discord does not send invite info without it!)**

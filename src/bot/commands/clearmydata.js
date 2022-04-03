@@ -3,7 +3,7 @@ module.exports = {
     await message.channel.createMessage({
       embeds: [{
         title: 'Action needed:',
-        description: 'To clear your data (messages), please join [my support server](https://discord.gg/ed7Gaa3) and ask in the bot support channel OR join the server and private message `James Bond#0007`. Remember: all messages stored are removed automatically after two days from the database.',
+        description: 'To clear your data, follow the email instructions outlined in the You and Your Data section of our [Privacy Policy](https://github.com/GamesROB/documentation/blob/master/Wiki/Documentation/PrivacyPolicy.md#you-and-your-data). **Keep in mind, when we delete your data we delete __ALL__ of your data across all of the bots.',
         color: 16711680,
         timestamp: new Date(),
         footer: {

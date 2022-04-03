@@ -2,6 +2,8 @@ const cluster = require('cluster')
 const checkForMissingSettings = require('../utils/recoverSettings')
 const statAggregator = require('../modules/statAggregator')
 
+require('dotenv').config()
+
 module.exports = {
   name: 'ready',
   type: 'once',
