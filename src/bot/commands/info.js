@@ -44,7 +44,7 @@ module.exports = {
     })
   },
   name: 'info',
-  quickHelp: `Get information about how ${global.bot.user.username} was made and the current shard serving you.`,
+  quickHelp: `Get information about how Logger was made and the current shard serving you.`,
   examples: `\`${process.env.GLOBAL_BOT_PREFIX}info\``,
   type: 'any',
   category: 'Information'
